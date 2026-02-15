@@ -1,0 +1,85 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+  background: linear-gradient(140deg, #f5f7ff 0%, #edf6f0 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 24px;
+  min-height: 100vh;
+}
+
+.panel {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.row label {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+button {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #0f766e;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.status {
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.messages {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.message {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 10px 0;
+}
+
+@media (max-width: 900px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+}

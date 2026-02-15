@@ -1,0 +1,13 @@
+# backend
+backend/target/
+
+# frontend
+frontend/node_modules/
+frontend/dist/
+
+# IDE and OS
+.idea/
+.vscode/
+*.iml
+Thumbs.db
+Desktop.ini
